@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="24dp" android:gravity="center"
+    android:background="#0D1117">
+
+    <TextView android:text="📱 RemotePhone" android:textSize="26sp" android:textColor="#58A6FF"
+        android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:text="SERVER — HP yang dikontrol" android:textSize="13sp" android:textColor="#8B949E"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32dp"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="#161B22" android:padding="20dp" android:layout_marginBottom="20dp">
+
+        <TextView android:text="URL Relay Server" android:textColor="#8B949E" android:textSize="12sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp"/>
+        <EditText android:id="@+id/etRelayUrl" android:layout_width="match_parent" android:layout_height="48dp"
+            android:hint="contoh: remotephone.up.railway.app" android:textColor="#F0F6FC"
+            android:textColorHint="#6E7681" android:background="#21262D" android:padding="12dp"
+            android:inputType="textUri" android:textSize="14sp" android:layout_marginBottom="16dp"/>
+
+        <TextView android:id="@+id/tvRoomId" android:text="Room ID: ------" android:textSize="22sp"
+            android:textColor="#3FB950" android:textStyle="bold" android:gravity="center"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/btnCopyRoom" android:text="📋 Salin Room ID"
+            android:layout_width="match_parent" android:layout_height="40dp"
+            android:backgroundTint="#21262D" android:textColor="#58A6FF" android:textSize="13sp"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvStatus" android:text="Status: Belum aktif" android:textSize="14sp"
+        android:textColor="#F0F6FC" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" android:gravity="center"/>
+
+    <Button android:id="@+id/btnStart" android:text="▶  MULAI SERVER" android:layout_width="match_parent"
+        android:layout_height="56dp" android:backgroundTint="#238636" android:textColor="#FFF"
+        android:textSize="16sp" android:layout_marginBottom="12dp"/>
+    <Button android:id="@+id/btnStop" android:text="⏹  STOP" android:layout_width="match_parent"
+        android:layout_height="56dp" android:backgroundTint="#DA3633" android:textColor="#FFF"
+        android:textSize="16sp" android:enabled="false"/>
+
+    <TextView android:text="⚠ Aktifkan Accessibility Service di Settings sebelum memulai"
+        android:textSize="11sp" android:textColor="#E3B341" android:gravity="center"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+</LinearLayout>

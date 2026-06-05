@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RemotePhone Server</string>
+    <string name="accessibility_description">Diperlukan untuk menerima perintah kontrol dari HP lain</string>
+</resources>
